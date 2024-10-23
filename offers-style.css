@@ -5,7 +5,6 @@
     --color-orange: #fbc966;
     --font-arima: "Arima", system-ui;
     --font-roboto: "Roboto", sans-serif;
-    ;
 }
 
 /**** Offers Page Styling ***/
@@ -117,5 +116,5 @@
     padding: 10px 50px;
     border-radius: 8px;
     box-shadow: 0 0 4px var(--color-light-green);
-    color: va;
+    color: var(--color-dark-green);
 }
