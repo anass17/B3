@@ -1,1 +1,3 @@
-# B3
+# Refonte-du-Design-du-Site-Web-de-Rekrute
+Contexte du projet:
+La société Rekrute souhaite moderniser son site web pour améliorer l'expérience utilisateur et se démarquer sur le marché. Pour cela, un projet de renouvellement du design est lancé, impliquant des étudiants organisés en groupes de 5. Chaque groupe doit créer une maquette de 5 pages, en adoptant une approche agile. Les livrables incluent des user stories, un zonning, des wireframes (low et high fidelity) et un prototype interactif. Par la suite, les groupes intégreront la maquette en HTML et CSS, en utilisant les dernières normes comme le Flexbox et Grid pour garantir un design responsive. Ce projet permettra aux étudiants de développer des compétences pratiques en design et développement web.

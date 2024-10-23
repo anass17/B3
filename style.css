@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --color-dark-green: #007368;
+    --color-light-green: #c4dfd8;
+    --color-dark-blue: #b1d0e5;
+    --color-orange: #fbc966;
+    --font-arima: "Arima", system-ui;
+    --font-roboto: "Roboto", sans-serif;;
+}
+
+body {
+    font-family: var(--font-roboto);
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none
+}
+
+.container {
+    max-width: 1114px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+/* Common Header */
+
+.header-content {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 0;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+.header-content .nav-links {
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+    color: var(--color-dark-blue);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.header-content .brand img {
+    width: 150px;
+}
+
+/* Common Main */
+
+.common-main {
+    background-size: cover;
+    background-position: center;
+}
+
+.home-page .common-main {
+    background-image: url("imgs/Home.jpg");
+}
+
+.common-main .main-content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.common-main .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(14, 51, 48, .6);
+}
+
+.common-main .main-content h1 {
+    font-size: 3.5rem;
+    color: var(--color-dark-blue);
+    font-family: var(--font-arima);
+    font-weight: 600;
+}
+
+.common-main .home-form {
+    margin-top: 50px;
+    display: flex;
+}
+
+.common-main .home-form {
+    margin-top: 50px;
+    display: flex;
+    position: relative;
+}
+
+.common-main .home-form svg {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 15px;
+    top: 14px;
+    fill: var(--color-dark-green);
+}
+
+.common-main .search-input {
+    width: 400px;
+    height: 50px;
+    border-radius: 50px 0 0 50px;
+    padding: 0 50px;
+    border: 1px solid #888888;
+    outline: none;
+    font-size: 16px;
+    background-color: #C4DFD8;
+}
+
+.common-main .search-input::placeholder {
+    color: #626262;
+    font-family: var(--font-roboto);
+    font-size: 16px;
+}
+
+.common-main .search-submit {
+    height: 50px;
+    background-color: var(--color-dark-green);
+    width: 100px;
+    color: #FFF;
+    border-radius: 0 50px 50px 0;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.common-footer {
+    background-color: var(--color-dark-green);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    color: #FFF;
+}
+
+.footer-content .address-info {
+    text-align: center;
+}
+
+.footer-content .address-info p {
+    margin-bottom: 15px;
+}
+
+.footer-content .address-info .email {
+    text-decoration: underline;
+}
+
+.footer-content .social-media-links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-content .social-media-links svg {
+    width: 30px;
+    fill: #FFF;
+}
+
+.footer-content .quick-links {
+    display: flex;
+    flex-wrap: wrap;
+    width: 240px;
+    font-size: 20px;
+    justify-content: center;
+    gap: 24px;
+}
+
+.newsletter {
+    background-color: var(--color-dark-blue);
+}
+
+.newsletter .container {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+
+.newsletter p {
+    color: var(--color-dark-green);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.newsletter input {
+    padding: 13px 15px;
+    border-radius: 10px;
+    border: 1px solid var(--color-dark-green);
+    background-color: var(--color-light-green);
+    margin-right: 10px;
+}
+
+.newsletter input::placeholder {
+    color: var(--color-dark-green);
+}
+
+.newsletter input:first-of-type {
+    width: 170px;
+}
+
+.newsletter input:nth-of-type(2) {
+    width: 340px;
+}
+
+.newsletter button {
+    padding: 10px 15px;
+    border-radius: 7px;
+    background-color: var(--color-dark-green);
+    color: var(--color-light-green);
+}
+
+.copyright {
+    padding: 10px 0;
+    background-color: var(--color-dark-blue);
+    text-align: center;
+    color: var(--color-dark-green);
+}
