@@ -1,3 +1,7 @@
+.app-form-page .common-main {
+    background-image: url("imgs/Application.jpg");
+}
+
 /* Icons in Inputs */
 .input-icons {
     position: relative;
@@ -11,14 +15,20 @@
     color: #6c757d;
 }
 
+.container{
+    width: 100%;
+    max-width: 1114px;
+}
+
 .input-icons input, 
 .input-icons textarea {
    /* padding-left: 50px; /* to leave space for icons */
 }
 
-.app-form-page .container form {
+.app-form-page .container .application-form {
     width: 650px;
     margin: auto;
+    padding-bottom: 70px !important;
 }
 
 .app-form-page .container h2 {
@@ -28,7 +38,7 @@
     margin-bottom: 50px;
 }
 
-.app-form-page .form label {
+.app-form-page .application-form label {
     margin-bottom: 7px;
     margin-top: 15px;
     display: block;
@@ -128,6 +138,34 @@
     top: 0;
     height: 100%;
     left: 0;
+}
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .app-form-page .container .application-form {
+        width: 90%;
+        padding: 0 10px;
+    }
+
+    .app-form-page .users-info,
+    .app-form-page .info {
+        flex-direction: column;
+    }
+
+    .app-form-page .input-icons input,
+    .app-form-page .input-icons textarea {
+        width: 100%;
+    }
+
+    .app-form-page .input-icons {
+        margin-bottom: 15px;
+    }
+
+    .submit-btn button {
+        width: 100%;
+        padding: 15px;
+    }
 }
 
 
