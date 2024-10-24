@@ -1,3 +1,11 @@
+:root {
+    --color-dark-green: #007368;
+    --color-light-green: #c4dfd8;
+    --color-dark-blue: #b1d0e5;
+    --color-orange: #fbc966;
+    --font-arima: "Arima", system-ui;
+    --font-roboto: "Roboto", sans-serif;;
+}
 .about .section1
 {
     display: grid;
@@ -11,16 +19,20 @@
     grid-row: 1;
     padding-left: 5%;
     padding-bottom: 30px;
+    font-family: var(--font-arima);
+    color: var(--color-dark-green);
 }
 .about .div-1-sec-1
 {
-    background-color: blue;
+    /* background-color: blue; */
     padding: 10%;
+    font-family: var(--font-roboto);
 }
 
 .about .div-2-sec-1
 {
-    background-color: red;
+    /* background-color: red; */
+    font-family: var(--font-roboto);
     padding: 10%;
 }
 .about .section2
@@ -32,6 +44,8 @@
 }
 .about h2
 {
+    font-family: var(--font-arima);
+    color: var(--color-dark-green);
     grid-column: 2;
     grid-row: 1;
 }
@@ -47,9 +61,10 @@
     max-width: 100%;
 }
 .about .div-2-sec-2 {
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
     grid-column: 2;
     grid-row: 2;
+    font-family: var(--font-roboto);
     /* padding: 20px; */
     /* margin: 10px; */
 }
@@ -67,6 +82,8 @@
     /* height: 100%; */
     /* padding: 20px; */
     /* margin: 10px; */
+    /* font-family: var(--font-roboto); */
+    margin-right: 6px;
 }
 
 .about .div-4-sec-2 {
@@ -76,9 +93,10 @@
     /* height: 100%; */
     /* padding: 20px; */
     /* margin: 10px; */
+    font-family: var(--font-roboto);
 }
 .about .section3{
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -88,62 +106,107 @@
 {
     grid-column: 1/4;
     grid-row: 1;
+    font-family: var(--font-arima);
+    color: var(--color-dark-green);
+    display: flex;
+    justify-content: center;
 }
 .div-1-sec-3 {
-    background-color: #FF5733;
+    /* background-color: #FF5733; */
     grid-column: 1/4;
     grid-row: 2;
+    font-family: var(--font-arima);
+    /* color: var(--color-dark-green); */
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
 }
 
 .div-2-sec-3 {
-    background-color: #33FF57;
+    /* background-color: #33FF57; */
     grid-column: 1;
     grid-row: 3;
+    display: flex;
+    justify-content: center;
 }
 
 .div-3-sec-3 {
-    background-color: #3357FF;
+    /* background-color: #3357FF; */
     grid-column: 2;
     grid-row: 3;
+    display: flex;
+    justify-content: center;
 }
 
 .div-4-sec-3 {
-    background-color: #F1C40F;
+    /* background-color: #F1C40F; */
     grid-column: 3;
     grid-row: 3;
+    display: flex;
+    justify-content: center;
 }
 
 .div-5-sec-3 {
-    background-color: #9B59B6;
+    /* background-color: #9B59B6; */
     grid-column: 1;
     grid-row: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-arima);
+    color: var(--color-dark-green);
+    font-weight: bold;
 }
 
 .div-6-sec-3 {
-    background-color: #1ABC9C;
+    /* background-color: #1ABC9C; */
     grid-column: 2;
     grid-row: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-arima);
+    color: var(--color-dark-green);
+    font-weight: bold;
 }
 
 .div-7-sec-3 {
-    background-color: #E67E22;
+    /* background-color: #E67E22; */
     grid-column: 3;
     grid-row: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-arima);
+    color: var(--color-dark-green);
+    font-weight: bold;
 }
 
 .div-8-sec-3 {
-    background-color: #34495E;
+    /* background-color: #34495E; */
     grid-column: 1;
     grid-row: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-roboto);
 }
 
 .div-9-sec-3 {
-    background-color: #D35400;
+    /* background-color: #D35400; */
     grid-column: 2;
     grid-row: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-roboto);
 }
-.div-9-sec-3 {
-    background-color: #000000;
+.div-10-sec-3 {
+    /* background-color: #000000; */
     grid-column: 3;
     grid-row: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-roboto);
 }
