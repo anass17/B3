@@ -287,7 +287,7 @@ button {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* animation: sliding 20s linear backwards infinite; */
+    animation: sliding 20s linear backwards infinite;
     width: 100%;
 }
 
