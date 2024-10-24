@@ -4,6 +4,7 @@
     margin: 0;
 }
 
+
 :root {
     --color-dark-green: #007368;
     --color-light-green: #c4dfd8;
@@ -23,10 +24,8 @@ html {
     }
 }
 
-
 body {
-    font-family: var(--font-roboto);
-    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 ul {
@@ -44,14 +43,22 @@ button {
     border: none
 }
 
+:root {
+    --color-dark-green: #007368;
+    --color-light-green: #c4dfd8;
+    --color-dark-blue: #b1d0e5;
+    --color-orange: #fbc966;
+
+}
+
 .container {
-    max-width: 1114px;
+    width: 1114px;
     padding-left: 15px;
     padding-right: 15px;
-    width: 100%;
     margin: auto;
     position: relative;
 }
+
 
 /* Common Header */
 
@@ -323,6 +330,23 @@ button {
 
 .newsletter input {
     padding: 13px 15px;
+}
+
+/* Contact Page */
+
+.contact-page .container{
+    width: 1114px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+    position: relative;
+}
+
+.contact-page .container .fieldset{
+    background-color: #b1d0e5;
+    margin:auto;
+    width: 550px;
+    height: 700px;
     border-radius: 10px;
     border: 1px solid var(--color-dark-green);
     background-color: var(--color-light-green);
@@ -330,8 +354,9 @@ button {
     outline: none;
 }
 
-.newsletter input::placeholder {
-    color: var(--color-dark-green);
+.contact-page .container .fieldset form h2{
+    color: #007368;
+    padding: 50px 150px;
 }
 
 .newsletter input:first-of-type {
