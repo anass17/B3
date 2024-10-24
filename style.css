@@ -339,6 +339,11 @@ button {
     padding: 20px;
     align-items: center;
     box-shadow: 0px 0px 12px rgb(0 0 0 / 41%);
+    transition: transform .5s;
+}
+
+.home-page .categories .category:hover {
+    transform: scale(1.1);
 }
 
 .home-page .categories .category svg {
@@ -368,7 +373,7 @@ button {
 .home-page .recent-offers-group {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 270px);
+    grid-template-rows: repeat(3, 250px);
     gap: 20px;
 }
 
@@ -376,7 +381,7 @@ button {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, .3);
     border-radius: 10px;
     display: flex;
-    padding: 40px 35px;
+    padding: 35px 35px;
     gap: 40px;
 }
 
