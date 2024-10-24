@@ -218,6 +218,7 @@ button {
     border: 1px solid var(--color-dark-green);
     background-color: var(--color-light-green);
     margin-right: 10px;
+    outline: none;
 }
 
 .newsletter input::placeholder {
@@ -244,4 +245,209 @@ button {
     background-color: var(--color-dark-blue);
     text-align: center;
     color: var(--color-dark-green);
+}
+
+/* Partners */
+
+.home-page .partners {
+    padding: 70px 0;
+    text-align: center;
+}
+
+.home-page .partners h2 {
+    margin-bottom: 30px;
+    color: var(--color-dark-green);
+    font-family: var(--font-arima);
+    font-size: 2.5rem;
+}
+
+.home-page .partners .partners-film {
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.home-page .partners .overlay {
+    background: linear-gradient(90deg, #B1D0E5 0%, rgba(196, 223, 216, 0) 25%, rgba(196, 223, 216, 0) 75%, #B1D0E5 100%);
+    position: absolute;
+    top: 0;
+    left: -7px;
+    width: 105%;
+    height: 100%;
+    filter: blur(7px);
+    z-index: 5;
+}
+
+.home-page .partners .overlay:hover ~ .logos-list {
+    animation-play-state: paused;
+}
+
+.home-page .partners .logos-list {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    animation: sliding 20s linear backwards infinite;
+    width: 100%;
+}
+
+.home-page .partners .logos-list:last-child {
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.home-page .partner-item img {
+    height: 60px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.home-page .partner-item span {
+    font-size: 18px;
+}
+
+/* Categories */
+
+.home-page .categories {
+    padding: 70px 0;
+}
+
+.home-page .categories h2 {
+    margin-bottom: 45px;
+    color: var(--color-dark-green);
+    font-family: var(--font-arima);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.home-page .categories .categories-group {
+    display: grid;
+    grid-template-columns: repeat(3, 270px);
+    grid-template-rows: repeat(2, 270px);
+    gap: 25px;
+    justify-content: center;
+}
+
+.home-page .categories .category {
+    background-color: var(--color-orange);
+    color: #FFF;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    box-shadow: 0px 0px 12px rgb(0 0 0 / 41%);
+    transition: transform .5s;
+}
+
+.home-page .categories .category:hover {
+    transform: scale(1.1);
+}
+
+.home-page .categories .category svg {
+    fill: #FFF;
+    width: 60px;
+}
+
+.home-page .categories .category h3 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* Recent Offers */
+
+.home-page .recent-offers {
+    padding: 70px 0;
+}
+
+.home-page .recent-offers h2 {
+    margin-bottom: 45px;
+    color: var(--color-dark-green);
+    font-family: var(--font-arima);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.home-page .recent-offers-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 250px);
+    gap: 20px;
+}
+
+.home-page .recent-offer-item {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .3);
+    border-radius: 10px;
+    display: flex;
+    padding: 35px 35px;
+    gap: 40px;
+}
+
+.home-page .recent-offer-item img {
+    width: 70px;
+    align-self: center;
+}
+
+.home-page .offer-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.home-page .offer-details small {
+    color: #656565;
+}
+
+.home-page .offer-details .offer-footer {
+    align-self: flex-end;    
+    display: flex;
+    align-items: center;
+}
+
+.home-page .offer-footer * {
+    width: 135px;
+    color: #7D7D7D;
+    font-weight: 500;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1rem;
+    text-align: center;
+    font-family: var(--font-roboto);
+}
+
+.home-page .offer-footer a:last-child {
+    background-color: #007368;
+    color: #FFF;
+    display: inline-block;
+    border-radius: 7px;
+}
+
+.home-page .explore-more-offers {   
+    font-family: var(--font-roboto);
+    display: block;
+    width: 160px;
+    height: 45px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: var(--color-orange);
+    color: #FFF;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    line-height: 45px;
+}
+
+/* Keyframes */
+
+@keyframes sliding {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
