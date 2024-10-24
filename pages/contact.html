@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../contact.css">
+    <link rel="stylesheet" href="../mediaContact.css">
 </head>
 <body class="contact-page">
-    <div class="faq-container">
+    <div class="container">
         <div class="titles">
             <p> Your Common Queries Answered With Additional FAQs</p>
             <p>Lorem ipsum dolor sit amet consecing elitfugiat aspernatur consequuntur ipsa quae.</p>
@@ -18,24 +20,58 @@
                     <p class="p">How Can i Benefit from Your Startup?</p>
                     <p><a href="#">+</a></p>
                 </div>
+                <div class="answer">
+                    <p>First read the description of the offer and make sure you have the needed skills and met the mentioned conditions. If so, then send an application to review. Further steps will be shared after that</p>
+                </div>
                 <div class="flex-p">
                     <p class="p">How Can i Get Touch with Costumer Support?</p>
                     <p><a href="#">+</a></p>
+                </div>
+                <div class="answer">
+                    <p>First read the description of the offer and make sure you have the needed skills and met the mentioned conditions. If so, then send an application to review. Further steps will be shared after that</p>
                 </div>
                 <div class="flex-p">
                     <p class="p">How do you Ensure Data Security and Privacy?</p>
                     <p><a href="#">+</a></p>
                 </div>
+                <div class="answer">
+                    <p>First read the description of the offer and make sure you have the needed skills and met the mentioned conditions. If so, then send an application to review. Further steps will be shared after that</p>
+                </div>
                 <div class="flex-p">
                     <p class="p">How do i get Started With your offerings</p>
                     <p><a href="#">+</a></p>
-                </div>                
+                </div>
+                <div class="answer">
+                    <p>First read the description of the offer and make sure you have the needed skills and met the mentioned conditions. If so, then send an application to review. Further steps will be shared after that</p>
+                </div>               
             </div>
             <div class="pic">
                 <img src="../imgs/pexels-photo-7681291_1.jpg" alt="cours d'appel">
             </div>
         </div>
     </div>
+    <script>
+        //Get all plus
+        let questions = document.querySelectorAll(".flex-p p:not(.p) a");
+        //Get all answers
+        let answers = document.getElementsByClassName("answer");
 
+        //Loop on all plus
+        for (let i = 0; i < questions.length; i++) {
+            //add click event to all plus
+            questions[i].addEventListener("click",function(){
+
+                if(answers[i].style.display == "block"){
+                    questions[i].textContent = "+"
+                    answers[i].style.display = "none";
+                }else{
+                    questions[i].textContent = "-";
+                    answers[i].style.display = "block";
+                }
+                
+            })
+            
+        }
+    </script>
 </body>
 </html>
