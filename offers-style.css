@@ -1,20 +1,29 @@
-:root {
+/* :root {
     --color-dark-green: #007368;
     --color-light-green: #c4dfd8;
     --color-dark-blue: #b1d0e5;
     --color-orange: #fbc966;
     --font-arima: "Arima", system-ui;
-    --font-roboto: "Roboto", sans-serif;
+    --font-roboto: "Roboto", sans-serif;;
+} */
+
+.offers-page .common-main{
+    background-image: url("./imgs/Offers.jpg");
+
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /**** Offers Page Styling ***/
 
-.offers-page h1 {
+.offers-page h2 {
     text-align: center;
-    font-family: var(--font-arima);
+    font-family: var(--font-roboto);
     font-size: 2.5rem;
     color: var(--color-dark-green);
-    margin-top: 1.25rem;
+    margin-top: 4.5rem;
     margin-bottom: 3.125rem;
 }
 
@@ -150,13 +159,13 @@
     align-items: baseline;
 }
 .offers-page .card-top p {
-    font-family: var(--font-arima);
+    font-family: var(--font-roboto);
     font-size: 1.063rem;
     font-weight: 600;
     width: 11.5rem;
 }
 .offers-page .card-top button {
-    font-family: var(--font-arima);
+    font-family: var(--font-roboto);
     font-size: 0.75rem;
     font-weight: 500;
     width: 5.625rem;
@@ -167,7 +176,7 @@
 }
 .offers-page .card-top span {
     
-    font-family: var(--font-arima);
+    font-family: var(--font-roboto);
     font-size: 0.75rem;
     font-weight: 500;
     text-align: center;
@@ -184,6 +193,7 @@
 .offers-page .card-middle p:first-of-type {
     font-family: var(--font-roboto);
     font-size: 0.875rem;
+    font-weight: 400;
     color: #656565;
     margin: 0.625rem 0 1.875rem 0;
 }
@@ -191,9 +201,10 @@
     font-family: var(--font-roboto);
     max-width: 80%;
     width: fit-content;
-    font-size: 1.063rem;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 400;
     margin-bottom: 3.125rem;
+    max-height: 120px;
 }
 
 .offers-page .card-bottom {
@@ -202,9 +213,9 @@
     gap: 0.625rem;
 }
 .offers-page .card-bottom p {
-    font-family: var(--font-arima);
+    font-family: var(--font-roboto);
     font-size: 0.75rem;
-    font-weight: 500;
+    font-weight: 400;
     text-align: center;
     width: 7.5rem;
     padding: 0.4rem 0;
@@ -215,7 +226,7 @@
 }
 .offers-page .blm-container{
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
 }
 .offers-page .button-lm {
     text-align: center;
