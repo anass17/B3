@@ -6,6 +6,19 @@
 
 }
 
+.contact-page .common-main{
+    background-image: url("imgs/Contact.jpg");
+}
+
+.contact-page .container {
+    max-width: 1114px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+    position: relative;
+}
+
 /* contact form */
 .contact-page .contact-form {
     background-color: var(--color-dark-blue);
