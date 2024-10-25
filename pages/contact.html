@@ -118,21 +118,21 @@
             //add click event to all plus
             questions[i].addEventListener("click",function(){
 
-                if(answers[i].style.display == "block"){
-                    questions[i].textContent = "+"
-                    answers[i].style.display = "none";
-                }else{
-                    questions[i].textContent = "-";
-                    answers[i].style.display = "block";
-                }
-                
-                // if(answers[i].style.maxHeight == "400px"){
+                // if(answers[i].style.display == "block"){
                 //     questions[i].textContent = "+"
-                //     answers[i].style.maxHeight = "0";
+                //     answers[i].style.display = "none";
                 // }else{
                 //     questions[i].textContent = "-";
-                //     answers[i].style.maxHeight = "400px";
+                //     answers[i].style.display = "block";
                 // }
+                
+                if(answers[i].style.maxHeight == "400px"){
+                    questions[i].textContent = "+"
+                    answers[i].style.maxHeight = "0";
+                }else{
+                    questions[i].textContent = "-";
+                    answers[i].style.maxHeight = "400px";
+                }
             })
             
         }
