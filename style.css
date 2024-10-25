@@ -39,6 +39,55 @@ button {
     position: relative;
 }
 
+/* Contact Page */
+
+.contact-page .container{
+    width: 1114px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+    position: relative;
+}
+
+.contact-page .container .fieldset{
+    background-color: #b1d0e5;
+    margin:auto;
+    width: 550px;
+    height: 700px;
+    border-radius: 10px;
+    border: 1px solid var(--color-dark-green);
+    background-color: var(--color-light-green);
+    margin-right: 10px;
+    outline: none;
+}
+
+.contact-page .container .fieldset form h2{
+    color: #007368;
+    padding: 50px 150px;
+}
+
+.newsletter input:first-of-type {
+    width: 170px;
+}
+
+.newsletter input:nth-of-type(2) {
+    width: 340px;
+}
+
+.newsletter button {
+    padding: 10px 15px;
+    border-radius: 7px;
+    background-color: var(--color-dark-green);
+    color: var(--color-light-green);
+}
+
+.copyright {
+    padding: 10px 0;
+    background-color: var(--color-dark-blue);
+    text-align: center;
+    color: var(--color-dark-green);
+}
+
 /* Partners */
 
 .home-page .partners {
