@@ -7,7 +7,7 @@
 }
 
 .contact-page .common-main{
-    background-image: url("imgs/Contact.jpg");
+    background-image: url("../imgs/Contact.jpg");
 }
 
 .contact-page .container {
@@ -26,6 +26,7 @@
     max-width: 550px;
     width: 95%;
     padding: 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .3);
     margin: 50px auto;
 }
 
