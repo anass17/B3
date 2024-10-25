@@ -7,13 +7,12 @@
     --font-roboto: "Roboto", sans-serif;;
 } */
 
-.offers-page .common-main {
-    background-image: url("./imgs/Offers.jpg");
-
-}
-
 html {
     scroll-behavior: smooth;
+}
+
+.offers-page .common-main {
+    background-image: url("./imgs/Offers.jpg");
 }
 
 /**** Offers Page Styling ***/
@@ -34,7 +33,6 @@ html {
     justify-content: center;
     align-items: center;
     color: var(--color-dark-green);
-    /*  justify-items: center; */
 }
 
 .offers-page input::placeholder {
@@ -293,10 +291,7 @@ html {
 
     .offers-page .card-bottom {
         max-width: 24rem;
-        grid-area: 0.5rem;
     }
-
-
 }
 
 @media screen and (max-width: 850px) {
@@ -355,12 +350,9 @@ html {
 
     .offers-page .card-middle p:last-of-type {
         max-width: 100%;
-
     }
 
     .offers-page .card-bottom {
         max-width: 100%;
     }
-
-
 }
