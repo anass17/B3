@@ -21,7 +21,7 @@ html {
 .offers-page h2 {
     text-align: center;
     font-family: var(--font-roboto);
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: var(--color-dark-green);
     margin-top: 4.5rem;
     margin-bottom: 3.125rem;
@@ -53,7 +53,7 @@ html {
 
 .offers-page #search p {
     font-family: var(--font-roboto);
-    font-size: 1.5;
+    font-size: 1.6rem;
     margin-left: 0.625rem;
 }
 
@@ -122,6 +122,8 @@ html {
 .offers-page .fbutton {
     grid-area: 3/1/4/2;
     font-family: var(--font-roboto);
+    font-size: 0.8rem;
+    font-weight: 400;
     margin-left: 0.625rem;
     color: var(--color-dark-green);
     background-color: var(--color-orange);
@@ -129,6 +131,11 @@ html {
     border-radius: 5px;
     box-shadow: 0 0 4px var(--color-light-green);
     color: var(--color-dark-green);
+}
+
+.offers-page .fbutton:hover {
+    opacity: 0.9;
+    border: var(--color-dark-green) 1px solid;
 }
 
 /** Offers section**/
@@ -181,6 +188,12 @@ html {
     background-color: var(--color-dark-green);
     color: var(--color-light-green);
     border-radius: 0.25rem;
+}
+
+.offers-page .card-top button:hover {
+    background-color: var(--color-orange);
+    color: var(--color-dark-green);
+    transition: 0.2s ease;
 }
 
 .offers-page .card-top span {
@@ -237,9 +250,10 @@ html {
     border-radius: 0.5rem;
 }
 
+/** Container to center button*/
 .offers-page .blm-container {
     text-align: center;
-    margin-bottom: 5rem;
+    height: 10rem;
 }
 
 .offers-page .button-lm {
@@ -254,25 +268,42 @@ html {
     color: var(--color-dark-green);
 }
 
+.offers-page .button-lm:hover {
+    opacity: 0.9;
+    border: var(--color-dark-green) 1px solid;
+}
+
+/*** Media Querries***/
 @media screen and (max-width: 800px) {
+
     /* form media query */
+    :root {
+        font-size: 1.5rem;
+    }
 
     .offers-page .filter-form {
         grid-template-columns: 1fr;
-        grid-template-rows:  7.813rem 7.813rem 7.813rem 3.125rem; ;
+        grid-template-rows: 7.813rem 7.813rem 7.813rem 3.125rem;
+        ;
         justify-items: center;
-        align-content: space-between;
     }
+
     .offers-page #search {
         grid-area: 1/1/2/2;
     }
+
     .offers-page #input-category {
         grid-area: 2/1/3/2;
-    }    
+        text-align: start;
+    }
+
     .offers-page #input-experience {
         grid-area: 3/1/4/2;
+        text-align: start;
+
         justify-self: center;
     }
+
     .offers-page .input-field {
         width: 37.5rem;
         margin: 0;
