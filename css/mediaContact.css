@@ -1,0 +1,58 @@
+@media screen and (max-width:700px) {
+    *{
+        max-width: 700px;
+    }
+    .contact-page{
+        width: 100%;
+    }
+    
+    .container{
+        width: 100%;
+    }
+
+    .contact-page .titles{
+        width: 100%;
+    }
+    
+    .contact-page .titles p:first-child{
+        font-size: 35px;
+        width: 85%;
+    }
+
+    .contact-page .titles :last-child{
+    
+        margin: 15px auto;
+        width: 70%;
+    }
+
+    .contact-page .questions{
+        flex-direction: column-reverse;
+        margin: 66px auto;
+        max-width: 500px;
+        width: 100%;
+        
+    }
+
+    .contact-page .questions .faq  .flex-p .p{
+        max-width: 430px;
+        width: 100%;
+    }
+
+    .contact-page .flex-p :last-child{
+        font-size: 20px;
+    }
+    
+    .contact-page .pic img{
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 15px;
+
+    }
+    .contact-page .flex-p{
+        margin: 7px auto;
+        height: 55px;
+        padding: 17px 30px 0 30px;
+    }
+}

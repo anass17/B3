@@ -1,0 +1,175 @@
+.app-form-page .common-main {
+    background-image: url("../imgs/Application.jpg");
+}
+
+/* Icons in Inputs */
+.input-icons {
+    position: relative;
+}
+
+.input-icons i {
+    position: absolute;
+    left: 10px;
+    top: 17px;
+    transform: translateY(-50%);
+    color: #6c757d;
+}
+
+.container{
+    width: 100%;
+    max-width: 1114px;
+}
+
+.input-icons input, 
+.input-icons textarea {
+   /* padding-left: 50px; /* to leave space for icons */
+}
+
+.app-form-page .container .application-form {
+    width: 650px;
+    margin: auto;
+    padding-bottom: 70px !important;
+}
+
+.app-form-page .container h2 {
+    color: var(--color-dark-green);
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.app-form-page .application-form label {
+    margin-bottom: 7px;
+    margin-top: 15px;
+    display: block;
+}
+
+.app-form-page .users-info,
+.app-form-page .info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.app-form-page .input-icons input {
+    padding: 10px 15px;
+    margin: 0 0 10px;
+    width: 300px;
+    background-color: #f7f7f7;
+    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border: none;
+    padding-left: 30px;
+}
+
+.app-form-page .input-icons textarea {
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    background-color: #f7f7f7;
+    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    resize: none;
+    border: 1px solid #dfdfdf;
+}
+
+.submit-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.submit-btn button {
+    background-color: var(--color-orange);
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-btn button:hover {
+    background-color: #e0ae52;
+}
+
+.app-form-page .upload-file {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px dashed #D9D9D9;
+    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 211px;
+    align-items: center;
+    
+}
+.app-form-page .upload-file i{
+    position: static;
+    font-size: 45px;
+    transform: translate(0);
+
+}
+.app-form-page .upload-file .line1{
+    text-align: center;
+    color: #171818;
+    margin: 15px 0 15px;
+    font-family: var(--font-roboto);
+}
+
+.app-form-page .upload-file h1{
+    color: #6c757d;
+    font-family: var(--font-arima);
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.app-form-page .upload-file input[type="file"] {
+    opacity: 0;
+    width: 100%;
+    height: 150px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0;
+}
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .app-form-page .container .application-form {
+        width: 90%;
+        padding: 0 10px;
+    }
+
+    .app-form-page .users-info,
+    .app-form-page .info {
+        flex-direction: column;
+    }
+
+    .app-form-page .input-icons input,
+    .app-form-page .input-icons textarea {
+        width: 100%;
+    }
+
+    .app-form-page .input-icons {
+        margin-bottom: 15px;
+    }
+
+    .submit-btn button {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+
+
+
+
+
