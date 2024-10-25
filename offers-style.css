@@ -7,7 +7,7 @@
     --font-roboto: "Roboto", sans-serif;;
 } */
 
-.offers-page .common-main{
+.offers-page .common-main {
     background-image: url("./imgs/Offers.jpg");
 
 }
@@ -36,7 +36,8 @@ html {
     color: var(--color-dark-green);
     /*  justify-items: center; */
 }
-.offers-page input::placeholder{
+
+.offers-page input::placeholder {
     color: var(--color-dark-green);
     opacity: 0.65;
     font-family: var(--font-roboto);
@@ -55,6 +56,7 @@ html {
     font-size: 1.5;
     margin-left: 0.625rem;
 }
+
 .offers-page #search-icon {
     width: 0.75rem;
     position: relative;
@@ -80,7 +82,6 @@ html {
     display: flex;
     flex-direction: column;
     text-align: center;
-    max-width: 18.75rem;
     gap: 1.25rem;
     margin: 0 0.625rem;
 }
@@ -109,6 +110,7 @@ html {
     border-radius: 8px;
     box-shadow: 0 0 8px var(--color-light-green);
 }
+
 .offers-page .icon {
     width: 0.75rem;
     position: relative;
@@ -128,9 +130,10 @@ html {
     box-shadow: 0 0 4px var(--color-light-green);
     color: var(--color-dark-green);
 }
+
 /** Offers section**/
 
-.offers-page .cards-container{
+.offers-page .cards-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 6.25rem 0 3.125rem 0;
@@ -138,18 +141,21 @@ html {
     justify-content: center;
     justify-items: center;
 }
-.offers-page .cards{
+
+.offers-page .cards {
     display: grid;
-    grid-template-columns: 1fr 4fr ;
+    grid-template-columns: 1fr 4fr;
     padding: 0.938rem;
     box-shadow: 0 0 0.5rem rgb(0, 0, 0, 0.3);
     border-radius: 0.5rem;
     align-items: center;
 
 }
-.offers-page .company-logo{
+
+.offers-page .company-logo {
     max-width: 5rem;
 }
+
 .offers-page .card-top {
     display: flex;
     width: fit-content;
@@ -158,12 +164,14 @@ html {
     border-bottom: var(--color-orange) solid 0.313rem;
     align-items: baseline;
 }
+
 .offers-page .card-top p {
     font-family: var(--font-roboto);
     font-size: 1.063rem;
     font-weight: 600;
     width: 11.5rem;
 }
+
 .offers-page .card-top button {
     font-family: var(--font-roboto);
     font-size: 0.75rem;
@@ -174,8 +182,9 @@ html {
     color: var(--color-light-green);
     border-radius: 0.25rem;
 }
+
 .offers-page .card-top span {
-    
+
     font-family: var(--font-roboto);
     font-size: 0.75rem;
     font-weight: 500;
@@ -187,9 +196,10 @@ html {
     border-radius: 0.25rem;
 }
 
-.offers-page .card-middle{
+.offers-page .card-middle {
     width: fit-content;
 }
+
 .offers-page .card-middle p:first-of-type {
     font-family: var(--font-roboto);
     font-size: 0.875rem;
@@ -197,6 +207,7 @@ html {
     color: #656565;
     margin: 0.625rem 0 1.875rem 0;
 }
+
 .offers-page .card-middle p:last-of-type {
     font-family: var(--font-roboto);
     max-width: 80%;
@@ -204,7 +215,7 @@ html {
     font-size: 1rem;
     font-weight: 400;
     margin-bottom: 3.125rem;
-    max-height: 120px;
+    max-height: 7.5rem;
 }
 
 .offers-page .card-bottom {
@@ -212,6 +223,7 @@ html {
     justify-content: space-between;
     gap: 0.625rem;
 }
+
 .offers-page .card-bottom p {
     font-family: var(--font-roboto);
     font-size: 0.75rem;
@@ -224,10 +236,12 @@ html {
     box-shadow: 0 0 6px var(--color-light-green);
     border-radius: 0.5rem;
 }
-.offers-page .blm-container{
+
+.offers-page .blm-container {
     text-align: center;
     margin-bottom: 5rem;
 }
+
 .offers-page .button-lm {
     text-align: center;
     font-family: var(--font-roboto);
@@ -238,4 +252,41 @@ html {
     border-radius: 5px;
     box-shadow: 0 0 4px var(--color-light-green);
     color: var(--color-dark-green);
+}
+
+@media screen and (max-width: 800px) {
+    /* form media query */
+
+    .offers-page .filter-form {
+        grid-template-columns: 1fr;
+        grid-template-rows:  7.813rem 7.813rem 7.813rem 3.125rem; ;
+        justify-items: center;
+        align-content: space-between;
+    }
+    .offers-page #search {
+        grid-area: 1/1/2/2;
+    }
+    .offers-page #input-category {
+        grid-area: 2/1/3/2;
+    }    
+    .offers-page #input-experience {
+        grid-area: 3/1/4/2;
+        justify-self: center;
+    }
+    .offers-page .input-field {
+        width: 37.5rem;
+        margin: 0;
+    }
+
+    /* offers media query */
+    .offers-page .cards-container {
+        grid-template-columns: 1fr;
+    }
+
+    .offers-page .card-middle p:last-of-type {
+        max-width: 20rem;
+
+    }
+
+
 }
