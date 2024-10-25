@@ -6,8 +6,101 @@
 
 }
 
+/* contact form */
+.contact-page .contact-form {
+    background-color: var(--color-dark-blue);
+    border-radius: 7px;
+    max-width: 75%;
+    padding: 30px;
+    margin: 50px auto;
+}
+
+.contact-page .contact-form h2 {
+    color: var(--color-dark-green);
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.contact-page .contact-form svg {
+    width: 20px;
+}
+
+.contact-page .contact-form .input-flex {
+    display: flex;
+    gap: 30px;
+}
+
+@media (max-width: 575px) {
+    .contact-page .contact-form .input-flex {
+        flex-direction: column;
+    }
+    .contact-page .contact-form .input-flex .input-container:first-child {
+        margin: 0;
+    }
+}
+
+.contact-page .contact-form .input-container {
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.contact-page .contact-form input,
+.contact-page .contact-form textarea {
+    padding: 7px 15px 7px 45px;
+    border-radius: 5px;
+    height: 40px;
+    border: 1px solid #C9C9C9;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .25);
+    width: 100%;
+    outline: none;
+}
+.contact-page .contact-form input::placeholder,
+.contact-page .contact-form textarea::placeholder {
+    font-family: var(--font-roboto);
+    color: #929292;
+}
+
+.contact-page .contact-form textarea {
+    resize: none;
+    height: 200px;
+    padding-top: 10px;
+}
+
+.contact-page .contact-form svg {
+    position: absolute;
+    height: 16px;
+    fill: #8C8C8C;
+    top: 11px;
+    left: 10px;
+}
+
+.contact-page .contact-form .subject-icon {
+    transform: rotateY(180deg);
+}
+
+.contact-page button {
+    display: block;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    margin-left: auto;
+    background-color: var(--color-dark-green);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .25);
+    color: #FFF;
+    font-weight: 900;
+    font-size: 16px;
+}
+@media (max-width: 575px) {
+    .contact-page button {
+        margin-right: auto;
+    }
+}
+
+/* Contact FAQs */
 .container{
-    max-width: 1114px;
     width: 100%;
 }
 
@@ -61,6 +154,9 @@
 .answer{
     width: 430px;
     display: none;
+    /* overflow: hidden;
+    max-height: 0;
+    transition: max-height .5s; */
 }
 
 .answer p{
