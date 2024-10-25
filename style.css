@@ -16,6 +16,7 @@
 
 html {
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 @media (max-width: 767px) {
@@ -25,7 +26,7 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-roboto);
 }
 
 ul {
@@ -52,7 +53,8 @@ button {
 }
 
 .container {
-    width: 1114px;
+    max-width: 1114px;
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin: auto;
@@ -242,7 +244,6 @@ button {
     }
 }
 
-<<<<<<< Updated upstream
 @media (max-width: 650px) {
     .footer-content > *  {
         width: 100%;
@@ -255,8 +256,6 @@ button {
     }
 }
 
-=======
->>>>>>> Stashed changes
 @media (max-width: 991px) {
     .footer-content .brand {
         width: 100%;
@@ -321,12 +320,7 @@ button {
     .newsletter .container {
         flex-direction: column;
         padding-top: 25px;
-<<<<<<< Updated upstream
         height: auto;
-=======
-        height: 140px;
-        padding-bottom: 25px;
->>>>>>> Stashed changes
     }
 }
 
@@ -375,12 +369,32 @@ button {
     width: 340px;
 }
 
+.newsletter-form {
+    display: flex;
+    gap: 15px;
+}
+
+.newsletter input[type="text"] {
+    border-radius: 10px;
+    background-color: var(--color-light-green);
+    border: 1px solid var(--color-dark-green);
+    font-family: var(--font-roboto);
+    outline: none;
+}
+
+.newsletter input[type="text"]::placeholder {
+    color: var(--color-dark-green)
+}
+
+.newsletter button {
+    font-family: var(--font-roboto);
+}
+
 @media (max-width: 991px) {
     .newsletter-form {
         margin-top: 25px;
         width: 100%;
         justify-content: center;
-        display: flex;
         flex-wrap: wrap;
         gap: 2%;
     }
@@ -476,11 +490,7 @@ button {
     display: flex;
     justify-content: space-around;
     align-items: center;
-<<<<<<< Updated upstream
     animation: sliding 20s linear backwards infinite;
-=======
-    /* animation: sliding 20s linear backwards infinite; */
->>>>>>> Stashed changes
     width: 100%;
 }
 
@@ -583,14 +593,11 @@ button {
     padding: 30px 20px;
     align-items: center;
     box-shadow: 0px 0px 12px rgb(0 0 0 / 41%);
-<<<<<<< Updated upstream
     transition: transform .5s;
 }
 
 .home-page .categories .category:hover {
     transform: scale(1.1);
-=======
->>>>>>> Stashed changes
 }
 
 .home-page .categories .category svg {
@@ -620,18 +627,14 @@ button {
 .home-page .recent-offers-group {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-<<<<<<< Updated upstream
     grid-template-rows: repeat(3, 250px);
-=======
-    grid-template-rows: repeat(3, 270px);
->>>>>>> Stashed changes
     gap: 20px;
 }
 
 @media (max-width: 1150px) {
     .home-page .recent-offers-group {
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(6, 270px);
+        grid-template-rows: repeat(6, 250px);
     }
 }
 
@@ -639,11 +642,7 @@ button {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, .3);
     border-radius: 10px;
     display: flex;
-<<<<<<< Updated upstream
     padding: 35px 35px;
-=======
-    padding: 40px 35px;
->>>>>>> Stashed changes
     gap: 40px;
     max-width: 700px;
     justify-self: center;
@@ -664,13 +663,10 @@ button {
     color: #656565;
 }
 
-<<<<<<< Updated upstream
 .home-page .offer-details p {
     line-height: 1.75;
 }
 
-=======
->>>>>>> Stashed changes
 .home-page .offer-details .offer-footer {
     align-self: flex-end;    
     display: flex;
@@ -721,8 +717,4 @@ button {
     100% {
         transform: translateX(-100%);
     }
-<<<<<<< Updated upstream
 }
-=======
-}
->>>>>>> Stashed changes
