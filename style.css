@@ -730,6 +730,64 @@ button {
     line-height: 45px;
 }
 
+/* Error 404 page */
+
+.error404-page {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.error404-page .page-content {
+    width: 500px;
+    text-align: center;
+}
+
+.error404-page .page-content b {
+    background: linear-gradient(to right, #007368, #C4DFD8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-size: 60px;
+    margin-bottom: 30px;
+    display: block;
+
+}
+.error404-page .page-content h1 {
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-family: var(--font-arima);
+}
+.error404-page .page-content p {
+    margin-bottom: 30px;
+    font-family: var(--font-roboto);
+    line-height: 1.5;
+}
+.error404-page .page-content .links-group {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.error404-page .page-content a {
+    width: 180px;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.error404-page .page-content a:first-child {
+    background-color: var(--color-dark-green);
+    color: #FFF;
+}
+.error404-page .page-content a:last-child {
+    background-color: var(--color-orange);
+}
+
 /* Keyframes */
 
 @keyframes sliding {
