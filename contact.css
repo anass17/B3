@@ -23,7 +23,8 @@
 .contact-page .contact-form {
     background-color: var(--color-dark-blue);
     border-radius: 7px;
-    max-width: 50%;
+    max-width: 550px;
+    width: 95%;
     padding: 30px;
     margin: 50px auto;
 }
@@ -84,7 +85,7 @@
     transform: rotateY(180deg);
 }
 
-.contact-page button {
+.contact-page .contact-form button {
     display: block;
     height: 40px;
     width: 100px;
@@ -122,6 +123,8 @@
 .contact-page .questions{
     display: flex;
     margin: 95px auto;
+    flex-wrap: wrap-reverse;
+    gap: 25px;
     justify-content: center;
 }
 
@@ -130,7 +133,8 @@
     background-color: white;
     color: gray;
     margin-bottom: 30px;
-    width: 430px;
+    max-width: 430px;
+    width: 100%;
     border: none;
     border-radius: 6px;
     padding: 15px 30px;
