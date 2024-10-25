@@ -10,7 +10,7 @@
 .contact-page .contact-form {
     background-color: var(--color-dark-blue);
     border-radius: 7px;
-    max-width: 75%;
+    max-width: 50%;
     padding: 30px;
     margin: 50px auto;
 }
@@ -29,15 +29,6 @@
 .contact-page .contact-form .input-flex {
     display: flex;
     gap: 30px;
-}
-
-@media (max-width: 575px) {
-    .contact-page .contact-form .input-flex {
-        flex-direction: column;
-    }
-    .contact-page .contact-form .input-flex .input-container:first-child {
-        margin: 0;
-    }
 }
 
 .contact-page .contact-form .input-container {
@@ -93,11 +84,6 @@
     font-weight: 900;
     font-size: 16px;
 }
-@media (max-width: 575px) {
-    .contact-page button {
-        margin-right: auto;
-    }
-}
 
 /* Contact FAQs */
 .container{
@@ -147,8 +133,8 @@
     color: gray;
 }
 
-.contact-page .flex-p p a{
-    text-decoration: none;
+.contact-page .flex-p p{
+    cursor: pointer;
 }
 
 .answer{
